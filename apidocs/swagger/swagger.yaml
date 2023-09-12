@@ -1,0 +1,25 @@
+---
+swagger: "2.0"
+info:
+  description: "Rest API's for CountSymbols"
+  version: "1.0.0"
+  title: "CountSymbols OpenAPI"
+paths:
+  /api/v1:
+    post:
+      summary: "Count symbols in string."
+      description: ""
+      operationId: "countSymbols"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: false
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "OK"
+          schema:
+            type: "object"
+        400:
+          description: "Bad Request"
